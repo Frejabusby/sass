@@ -1,0 +1,85 @@
+.input-flight-from, .input-flight-to {
+  border-bottom: 2px solid #c3c3c3; }
+
+.search-button-container {
+  border-bottom: 2px solid #052f3e; }
+
+.flight-citys a {
+  border-bottom: 2px dotted #013e50; }
+
+.form-container, .flight-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.form-container, .input-flight-from input, .input-flight-to input, .flight-citys {
+  width: 100%; }
+
+.form-container {
+  justify-content: center; }
+
+.flight-form {
+  background-color: #e3e3e3;
+  padding: 20px;
+  width: 70%; }
+
+.input-flight-from, .input-flight-to {
+  width: calc(100% - 10px);
+  padding-bottom: 5px;
+  position: relative;
+  margin: 0px 5px; }
+
+.input-flight-from p, .input-flight-to p {
+  color: #013e50;
+  font-weight: 600;
+  margin: 10px 0px; }
+
+.input-flight-from input, .input-flight-to input {
+  border: none;
+  color: #052f3e;
+  height: 40px;
+  padding: 0px 10px; }
+
+.input-flight-from input::placeholder, .input-flight-to input::placeholder {
+  color: #c3c3c3;
+  font-size: 14px; }
+
+.input-flight-to img, .input-flight-from img {
+  position: absolute;
+  right: 10px; }
+
+.input-flight-to img {
+  bottom: 15px;
+  height: 20px; }
+
+.input-flight-from img {
+  bottom: 16px;
+  height: 18px; }
+
+.flight-citys {
+  line-height: 1.6;
+  padding: 0px 5px; }
+
+.flight-citys a {
+  text-decoration: none;
+  color: #013e50; }
+
+.search-button-container {
+  margin: 40px 5px 0px 5px; }
+
+.search-button {
+  background-color: #c41834;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0px;
+  text-align: left;
+  padding: 20px;
+  width: 200px;
+  min-height: 50px; }
+
+@media (min-width: 900px) {
+  .input-flight-to, .input-flight-from {
+    width: calc(50% - 10px); }
+  .flight-form {
+    padding: 35px; } }

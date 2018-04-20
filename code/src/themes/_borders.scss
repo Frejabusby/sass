@@ -1,0 +1,13 @@
+@import "./_colors";
+
+%border-grey {
+  border-bottom: 2px solid $color-dark-grey;
+}
+
+%border-blue {
+  border-bottom: 2px solid $color-dark-blue;
+}
+
+%border-dotted {
+  border-bottom: 2px dotted $color-light-blue;
+}

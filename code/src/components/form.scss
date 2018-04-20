@@ -1,0 +1,99 @@
+@import "../themes/colors";
+@import "../themes/borders";
+@import "../themes/flex-box";
+@import "../themes/width";
+
+
+.form-container {
+  @extend %flex-box-row;
+  @extend %width-100;
+  justify-content: center;
+}
+
+.flight-form {
+  @extend %flex-box-row;
+  background-color: $color-light-grey;
+  padding: 20px;
+  width: 70%;
+}
+
+.input-flight-from, .input-flight-to {
+  @extend %border-grey;
+  width: calc(100% - 10px);
+  padding-bottom: 5px;
+  position: relative;
+  margin: 0px 5px;
+}
+
+.input-flight-from p, .input-flight-to p {
+  color: $color-light-blue;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.input-flight-from input, .input-flight-to input{
+  @extend %width-100;
+  border: none;
+  color: $color-dark-blue;
+  height: 40px;
+  padding: 0px 10px;
+}
+
+.input-flight-from input::placeholder, .input-flight-to input::placeholder {
+  color: $color-dark-grey;
+  font-size: 14px;
+}
+
+.input-flight-to img, .input-flight-from img {
+  position: absolute;
+  right: 10px;
+}
+
+.input-flight-to img {
+  bottom: 15px;
+  height: 20px;
+}
+
+.input-flight-from img {
+  bottom: 16px;
+  height: 18px;
+}
+
+.flight-citys {
+  @extend %width-100;
+  line-height: 1.6;
+  padding: 0px 5px;
+}
+
+.flight-citys a {
+  @extend %border-dotted;
+  text-decoration: none;
+  color: $color-light-blue;
+}
+
+.search-button-container {
+  @extend %border-blue;
+  margin: 40px 5px 0px 5px;
+}
+
+.search-button {
+  background-color: $color-red;
+  border: none;
+  color: $color-white;
+  font-size: 16px;
+  margin: 5px 0px;
+  text-align: left;
+  padding: 20px;
+  width: 200px;
+  min-height: 50px;
+}
+
+@media (min-width: 900px) {
+  .input-flight-to, .input-flight-from {
+    width: calc(50% - 10px);
+  }
+
+  .flight-form {
+    padding: 35px;
+  }
+}
